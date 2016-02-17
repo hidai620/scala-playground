@@ -13,6 +13,7 @@ object CakePatternSample {
   class Users {
     def list = Seq("A", "B")
   }
+
   trait UsersComponent {
     val users:Users
   }
@@ -42,11 +43,10 @@ object CakePatternSample {
 
 
   //ビジネスロジック
-  trait UsersLogic extends UsersServiceComponent with ProductServiceComponent with UsersComponent {
-    def execute:Int = {
-      println(usersService.toCSV)
-      Result.success
-    }
+  trait UsersLogic
+    extends UsersServiceComponent
+      with ProductServiceComponent
+      with UsersComponent {
   }
 
 
@@ -55,10 +55,6 @@ object CakePatternSample {
     val users = new Users
     val usersService = new UsersService
     val productService = new ProductService
-
-    def run(args:Array[String]):Unit = {
-      execute
-    }
   }
 
   def main(args: Array[String]) {
