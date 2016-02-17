@@ -18,9 +18,10 @@ object OptionStudy {
 //      }
 //    }
 
+
     for {
-      a <- taroAddress orElse { Some("aはなかった") }
-      b <- aliceAddress orElse { Some("bはなかった") }
+      a <- taroAddress orElse Some("aはなかった")
+      b <- aliceAddress orElse Some("bはなかった")
     } {
       println(a)
       println(b)
