@@ -59,7 +59,7 @@ object DCakePatternSample {
 
   // test
 
-  //test のサービス実装
+  // test のサービス実装
   object TestUsersServiceImpl extends UsersService with MixinUsers {
     def toCSV:String = "test, test"
   }
