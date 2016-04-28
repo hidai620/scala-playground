@@ -1,4 +1,5 @@
-import com.example.CakePatternSample._
+import com.example.cakepattern.CakePatternSample
+import CakePatternSample._
 
 import org.specs2.mock.Mockito
 import org.specs2.mutable.Specification

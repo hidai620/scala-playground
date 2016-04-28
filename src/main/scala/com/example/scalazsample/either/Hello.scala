@@ -1,11 +1,11 @@
-package com.example
-import scalaz._
-import Scalaz._
+package com.example.scalazsample.either
 
-import java.util.Date
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
-import com.example.Hello.RichString
+import java.util.Date
+
+import scalaz.Scalaz._
+import scalaz._
 
 object Hello {
   implicit class RichDate(val date:Date) extends AnyVal {

@@ -1,7 +1,4 @@
-package com.example
-
-import scalaz._
-import Scalaz._
+package com.example.scalazsample.either
 
 /**
  */
